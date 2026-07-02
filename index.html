@@ -5,24 +5,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Carlos | Software Engineer & Frontend Developer</title>
   
-  <!-- Google Fonts para tipografía premium -->
+  <!-- Google Fonts: Playfair Display para un toque editorial elegante, e Inter para el cuerpo -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
   
   <style>
     /* ==========================================================================
-       DISEÑO GLOBAL Y VARIABLES
+       SISTEMA DE DISEÑO: WARM MINIMALISM
        ========================================================================== */
     :root {
-      --bg-gradient: radial-gradient(circle at top, #0f172a 0%, #020617 100%);
-      --text-main: #f8fafc;
-      --text-muted: #94a3b8;
-      --primary: #6366f1;
-      --primary-hover: #4f46e5;
-      --primary-glow: rgba(99, 102, 241, 0.3);
-      --slate-panel: rgba(30, 41, 59, 0.4);
-      --border-color: rgba(255, 255, 255, 0.08);
+      --bg-color: #FAF8F5;          /* Crema muy suave de fondo (lienzo cálido) */
+      --card-bg: #FFFFFF;           /* Blanco puro para destacar elementos sobre el lienzo */
+      --text-main: #1A1A1A;         /* Carbón profundo para textos principales */
+      --text-muted: #66635F;        /* Gris tierra para descripciones secundarias */
+      --border-color: #E6DFD5;      /* Tono tierra sutil para líneas divisorias finas */
+      --tech-bg: #F0ECE5;           /* Fondo sutil para etiquetas de tecnologías */
+      --accent: #4F46E5;            /* Acento clásico en reposo */
+      --spacing-unit: 8px;
     }
 
     * {
@@ -32,258 +32,336 @@
     }
 
     body {
-      font-family: 'Outfit', sans-serif;
-      background: var(--bg-gradient);
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      background-color: var(--bg-color);
       color: var(--text-main);
       min-height: 100vh;
       display: flex;
       flex-direction: column;
       align-items: center;
-      padding: 40px 20px;
-      overflow-x: hidden;
+      padding: 60px 24px;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
     }
 
     .container {
       width: 100%;
-      max-width: 800px;
+      max-width: 720px;
       display: flex;
       flex-direction: column;
-      gap: 50px;
+      gap: 40px;
     }
 
     /* ==========================================================================
-       SECCIÓN HERO (PRESENTACIÓN)
+       CABECERA Y BIOGRAFÍA (ESTILO EDITORIAL)
        ========================================================================== */
-    .hero {
-      text-align: center;
-      padding: 40px 20px;
-      background: var(--slate-panel);
-      border: 1px solid var(--border-color);
-      border-radius: 24px;
-      backdrop-filter: blur(12px);
-      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
-      position: relative;
-    }
-
-    .hero::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 150px;
-      height: 150px;
-      background: var(--primary);
-      filter: blur(100px);
-      opacity: 0.25;
-      pointer-events: none;
-    }
-
-    .avatar-placeholder {
-      width: 100px;
-      height: 100px;
-      border-radius: 50%;
-      background: linear-gradient(135deg, var(--primary) 0%, #c084fc 100%);
-      margin: 0 auto 20px;
+    header {
       display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 2.5rem;
-      box-shadow: 0 0 25px var(--primary-glow);
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 16px;
+      text-align: left;
+    }
+
+    .brand {
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: var(--text-muted);
     }
 
     h1 {
-      font-size: 2.5rem;
-      font-weight: 700;
-      margin-bottom: 10px;
-      background: linear-gradient(to right, #818cf8, #c084fc, #6366f1);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 2.4rem;
+      font-weight: 400;
+      line-height: 1.25;
+      color: var(--text-main);
     }
 
-    .subtitle {
-      font-size: 1.2rem;
-      color: var(--primary);
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 2px;
-      margin-bottom: 15px;
+    h1 em {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-style: italic;
     }
 
-    .bio {
+    .intro-paragraph {
       font-size: 1.05rem;
       color: var(--text-muted);
-      max-width: 600px;
-      margin: 0 auto 25px;
-      line-height: 1.6;
-    }
-
-    .social-links {
-      display: flex;
-      justify-content: center;
-      gap: 15px;
-    }
-
-    .social-btn {
-      background: rgba(255, 255, 255, 0.05);
-      border: 1px solid var(--border-color);
-      color: var(--text-main);
-      padding: 10px 20px;
-      border-radius: 30px;
-      text-decoration: none;
-      font-weight: 600;
-      font-size: 0.9rem;
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      transition: all 0.2s ease;
-    }
-
-    .social-btn:hover {
-      background: var(--primary);
-      border-color: var(--primary);
-      transform: translateY(-2px);
-      box-shadow: 0 5px 15px var(--primary-glow);
+      max-width: 620px;
+      font-weight: 300;
     }
 
     /* ==========================================================================
-       SECCIÓN DE PROYECTOS (PORTFOLIO GRID)
+       NAVEGACIÓN POR PESTAÑAS (TABS)
        ========================================================================== */
-    .projects-section {
+    .nav-tabs {
       display: flex;
-      flex-direction: column;
-      gap: 25px;
+      gap: 32px;
+      border-top: 1px solid var(--border-color);
+      border-bottom: 1px solid var(--border-color);
+      padding: 16px 0;
+      width: 100%;
+      user-select: none;
     }
 
-    .section-title {
-      font-size: 1.6rem;
-      font-weight: 700;
-      letter-spacing: 1px;
+    .tab-link {
+      background: none;
+      border: none;
+      font-family: 'Inter', sans-serif;
+      font-size: 0.85rem;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      color: var(--text-muted);
+      cursor: pointer;
       position: relative;
-      padding-bottom: 8px;
+      padding: 4px 0;
+      transition: color 0.25s ease;
     }
 
-    .section-title::after {
+    .tab-link:hover {
+      color: var(--text-main);
+    }
+
+    .tab-link.active {
+      color: var(--text-main);
+      font-weight: 600;
+    }
+
+    .tab-link.active::after {
       content: '';
       position: absolute;
-      bottom: 0;
+      bottom: -17px; /* Alineado justo encima de la línea divisoria inferior */
       left: 0;
-      width: 40px;
-      height: 3px;
-      background: var(--primary);
-      border-radius: 2px;
+      width: 100%;
+      height: 2px;
+      background-color: var(--text-main);
     }
 
-    .projects-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 20px;
+    /* ==========================================================================
+       ÁREA DE CONTENIDO (SECCIONES DE LAS PESTAÑAS)
+       ========================================================================== */
+    .tab-content-section {
+      display: none; /* Ocultas por defecto */
+      animation: fadeIn 0.4s ease forwards;
     }
 
-    @media (max-width: 650px) {
-      .projects-grid {
-        grid-template-columns: 1fr;
-      }
+    .tab-content-section.active {
+      display: block; /* Solo la sección activa es visible */
     }
 
-    .project-card {
-      background: var(--slate-panel);
-      border: 1px solid var(--border-color);
-      border-radius: 20px;
-      padding: 25px;
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(6px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* --- ESTILO SECCIÓN: SOBRE MÍ --- */
+    .about-wrapper {
       display: flex;
       flex-direction: column;
-      justify-content: space-between;
-      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-      position: relative;
-      overflow: hidden;
-      backdrop-filter: blur(10px);
+      gap: 24px;
+      text-align: left;
     }
 
-    .project-card:hover {
-      transform: translateY(-5px);
-      border-color: rgba(99, 102, 241, 0.3);
-      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    .about-title {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 1.6rem;
+      font-weight: 400;
+      margin-bottom: 12px;
     }
 
-    .project-header {
+    .about-paragraph {
+      font-size: 1rem;
+      color: var(--text-muted);
+      font-weight: 300;
+      line-height: 1.7;
+    }
+
+    .skills-title {
+      font-size: 0.8rem;
+      font-weight: 600;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: var(--text-main);
+      margin-top: 12px;
+      margin-bottom: 8px;
+    }
+
+    .skills-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    /* --- ESTILO SECCIÓN: PROYECTOS (PLANOS Y LIMPIOS) --- */
+    .projects-list {
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+    }
+
+    .project-item {
+      background-color: var(--card-bg);
+      border: 1px solid var(--border-color);
+      padding: 32px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      transition: border-color 0.25s ease;
+    }
+
+    .project-item:hover {
+      border-color: #a8a297; /* Divisorio ligeramente más oscuro en hover */
+    }
+
+    .project-meta {
       display: flex;
       justify-content: space-between;
-      align-items: flex-start;
-      margin-bottom: 15px;
+      align-items: center;
     }
 
-    .project-icon {
-      font-size: 2rem;
+    .project-number {
+      font-size: 0.75rem;
+      font-weight: 500;
+      color: var(--text-muted);
+      letter-spacing: 1px;
     }
 
-    .project-badge {
+    .project-category {
       font-size: 0.7rem;
-      background: rgba(99, 102, 241, 0.1);
-      color: var(--primary);
-      padding: 4px 10px;
-      border-radius: 12px;
       font-weight: 600;
       text-transform: uppercase;
       letter-spacing: 1px;
+      color: var(--text-muted);
     }
 
     .project-title {
-      font-size: 1.25rem;
-      font-weight: 700;
-      margin-bottom: 10px;
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 1.6rem;
+      font-weight: 400;
       color: var(--text-main);
     }
 
     .project-desc {
-      font-size: 0.9rem;
+      font-size: 0.95rem;
       color: var(--text-muted);
-      line-height: 1.5;
-      margin-bottom: 20px;
-      flex-grow: 1;
+      font-weight: 300;
+      line-height: 1.6;
     }
 
-    .project-tags {
+    .project-techs {
       display: flex;
       flex-wrap: wrap;
       gap: 6px;
-      margin-bottom: 20px;
     }
 
-    .tag {
+    .tech-tag {
       font-size: 0.75rem;
-      background: rgba(255, 255, 255, 0.03);
-      border: 1px solid var(--border-color);
-      color: var(--text-muted);
-      padding: 3px 8px;
-      border-radius: 6px;
+      background-color: var(--tech-bg);
+      color: var(--text-main);
+      padding: 4px 10px;
+      font-weight: 400;
+    }
+
+    .project-link-wrapper {
+      margin-top: 8px;
     }
 
     .project-link {
+      font-size: 0.85rem;
+      font-weight: 600;
       color: var(--text-main);
       text-decoration: none;
-      font-weight: 600;
-      font-size: 0.9rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      border-bottom: 1.5px solid var(--text-main);
+      padding-bottom: 2px;
+      transition: opacity 0.2s ease;
       display: inline-flex;
       align-items: center;
-      gap: 6px;
-      align-self: flex-start;
-      transition: color 0.2s;
+      gap: 4px;
     }
 
-    .project-card:hover .project-link {
-      color: var(--primary);
+    .project-link:hover {
+      opacity: 0.7;
+    }
+
+    /* --- ESTILO SECCIÓN: CONTACTO --- */
+    .contact-wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      text-align: left;
+    }
+
+    .contact-paragraph {
+      font-size: 1rem;
+      color: var(--text-muted);
+      font-weight: 300;
+      line-height: 1.7;
+    }
+
+    .contact-links {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      margin-top: 8px;
+    }
+
+    .contact-item {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      border-bottom: 1px solid var(--border-color);
+      padding-bottom: 16px;
+    }
+
+    .contact-item:last-child {
+      border-bottom: none;
+    }
+
+    .contact-label {
+      width: 100px;
+      font-size: 0.75rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: var(--text-muted);
+    }
+
+    .contact-val-link {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 1.25rem;
+      color: var(--text-main);
+      text-decoration: none;
+      transition: opacity 0.2s ease;
+    }
+
+    .contact-val-link:hover {
+      opacity: 0.6;
     }
 
     /* ==========================================================================
-       PIE DE PÁGINA
+       PIE DE PÁGINA (MINIMALISTA)
        ========================================================================== */
     footer {
-      text-align: center;
-      padding: 40px 0 20px;
-      font-size: 0.85rem;
-      color: var(--text-muted);
       border-top: 1px solid var(--border-color);
+      padding-top: 32px;
+      margin-top: 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      width: 100%;
+    }
+
+    @media (max-width: 500px) {
+      footer {
+        flex-direction: column;
+        gap: 16px;
+        align-items: flex-start;
+      }
     }
   </style>
 </head>
@@ -291,86 +369,155 @@
 
   <div class="container">
     
-    <!-- SECCIÓN HERO (PRESENTACIÓN) -->
-    <header class="hero">
-      <div class="avatar-placeholder">👨‍💻</div>
-      <h1>Carlos</h1>
-      <div class="subtitle">Software Engineer</div>
-      <p class="bio">
-        Apasionado por el desarrollo Frontend, la algoritmia y la optimización de procesos. 
-        Me encanta resolver problemas complejos construyendo experiencias digitales eficientes, interactivas y con una estética cuidada.
+    <!-- CABECERA EDITORIAL -->
+    <header>
+      <span class="brand">Carlos Torregrosa Alcayde/ Portafolio</span>
+      <h1>Data Engineer.</h1>
+      <p class="intro-paragraph">
+        Ingeniero de Datos con experiencia en el desarrollo de agentes de IA.
       </p>
-      
-      <div class="social-links">
-        <a href="https://github.com/carlostag" class="social-btn" target="_blank">
-          GitHub
-        </a>
-        <a href="mailto:tu-email@correo.com" class="social-btn">
-          Contacto ✉️
-        </a>
-      </div>
     </header>
 
-    <!-- SECCIÓN DE PROYECTOS -->
-    <main class="projects-section">
-      <h2 class="section-title">Proyectos Destacados</h2>
+    <!-- NAVEGACIÓN POR PESTAÑAS (TABS) -->
+    <nav class="nav-tabs">
+      <button class="tab-link active" data-target="about-sec">01 / Sobre mí</button>
+      <button class="tab-link" data-target="projects-sec">02 / Proyectos</button>
+      <button class="tab-link" data-target="contact-sec">03 / Contacto</button>
+    </nav>
+
+    <!-- ÁREA DE CONTENIDO -->
+    <main>
       
-      <div class="projects-grid">
-        
-        <!-- PROYECTO 1: PITCHDLE -->
-        <article class="project-card">
-          <div>
-            <div class="project-header">
-              <span class="project-icon">🎹</span>
-              <span class="project-badge">Juego Web</span>
+      <!-- PESTAÑA 1: SOBRE MÍ -->
+      <section class="tab-content-section active" id="about-sec">
+        <div class="about-wrapper">
+          <h2 class="about-title">Filosofía de desarrollo</h2>
+          <p class="about-paragraph">
+            Creo en el desarrollo de software artesanal, donde cada línea de código tiene un propósito claro. Me especializo en diseñar arquitecturas Web rápidas y ligeras, utilizando tecnologías nativas del navegador para evitar dependencias pesadas y lograr un rendimiento óptimo.
+          </p>
+          <p class="about-paragraph">
+            Combino mi experiencia en desarrollo Frontend moderno con un fuerte trasfondo matemático en optimización de operaciones y logística, lo que me permite abordar problemas desde una perspectiva técnica y lógica rigurosa.
+          </p>
+          
+          <h3 class="skills-title">Tecnologías</h3>
+          <div class="skills-list">
+            <span class="tech-tag">HTML5</span>
+            <span class="tech-tag">CSS3 Avanzado</span>
+            <span class="tech-tag">JavaScript Nativo</span>
+            <span class="tech-tag">Web Audio API</span>
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">Modelos Matemáticos</span>
+            <span class="tech-tag">Análisis de Operaciones</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- PESTAÑA 2: PROYECTOS -->
+      <section class="tab-content-section" id="projects-sec">
+        <div class="projects-list">
+          
+          <!-- PROYECTO 1: PITCHDLE -->
+          <article class="project-item">
+            <div class="project-meta">
+              <span class="project-number">PROYECTO // 01</span>
+              <span class="project-category">Juego Web Estático</span>
             </div>
             <h3 class="project-title">Pitchdle</h3>
             <p class="project-desc">
-              Juego diario de entrenamiento auditivo enfocado en el oído absoluto. Desafía a los usuarios a adivinar una nota musical aleatoria al día en 5 intentos con pistas visuales.
+              Un juego interactivo de entrenamiento auditivo diario enfocado en el oído absoluto. Construido como un archivo autónomo ultra optimizado que utiliza la API de Audio nativa del navegador para la síntesis de sonidos analógicos sin archivos de audio externos.
             </p>
-            <div class="project-tags">
-              <span class="tag">HTML5</span>
-              <span class="tag">CSS3 Avanzado</span>
-              <span class="tag">JavaScript</span>
-              <span class="tag">Web Audio API</span>
+            <div class="project-techs">
+              <span class="tech-tag">Web Audio API</span>
+              <span class="tech-tag">JavaScript Nativo</span>
+              <span class="tech-tag">CSS3</span>
+              <span class="tech-tag">HTML5 Canvas</span>
             </div>
-          </div>
-          <a href="/pitchdle/" class="project-link">
-            Jugar ahora ➔
-          </a>
-        </article>
+            <div class="project-link-wrapper">
+              <a href="/pitchdle/" class="project-link">
+                Jugar Pitchdle ➔
+              </a>
+            </div>
+          </article>
 
-        <!-- PROYECTO 2: SUPPLY CHAIN OPTIMIZER -->
-        <article class="project-card">
-          <div>
-            <div class="project-header">
-              <span class="project-icon">📦</span>
-              <span class="project-badge">Optimización</span>
+          <!-- PROYECTO 2: SUPPLY CHAIN OPTIMIZER -->
+          <article class="project-item">
+            <div class="project-meta">
+              <span class="project-number">PROYECTO // 02</span>
+              <span class="project-category">Algoritmia & Datos</span>
             </div>
             <h3 class="project-title">Supply Chain Optimizer</h3>
             <p class="project-desc">
-              Herramienta de optimización y simulación de cadenas de suministro. Resuelve problemas logísticos y de ruteo de inventario utilizando modelos matemáticos y análisis de datos.
+              Modelos de optimización aplicados a redes de distribución logística y ruteo de flotas. Diseñado para resolver flujos óptimos de inventario minimizando costes y maximizando la eficiencia de entrega.
             </p>
-            <div class="project-tags">
-              <span class="tag">Python</span>
-              <span class="tag">Mathematical Modeling</span>
-              <span class="tag">Data Visualization</span>
+            <div class="project-techs">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">Programación Lineal</span>
+              <span class="tech-tag">Visualización de Datos</span>
+            </div>
+            <div class="project-link-wrapper">
+              <a href="https://github.com/carlostag" class="project-link" target="_blank">
+                Ver Código ➔
+              </a>
+            </div>
+          </article>
+
+        </div>
+      </section>
+
+      <!-- PESTAÑA 3: CONTACTO -->
+      <section class="tab-content-section" id="contact-sec">
+        <div class="contact-wrapper">
+          <h2 class="about-title">Conectemos</h2>
+          <p class="contact-paragraph">
+            Si tienes interés en colaborar en un proyecto, optimizar un flujo logístico o conversar sobre desarrollo frontend minimalista, no dudes en escribirme.
+          </p>
+          
+          <div class="contact-links">
+            <div class="contact-item">
+              <span class="contact-label">Correo</span>
+              <a href="mailto:tu-email@correo.com" class="contact-val-link">tu-email@correo.com</a>
+            </div>
+            <div class="contact-item">
+              <span class="contact-label">GitHub</span>
+              <a href="https://github.com/carlostag" class="contact-val-link" target="_blank">github.com/carlostag</a>
             </div>
           </div>
-          <a href="https://github.com/carlostag" class="project-link" target="_blank">
-            Ver código ➔
-          </a>
-        </article>
+        </div>
+      </section>
 
-      </div>
     </main>
 
     <!-- PIE DE PÁGINA -->
     <footer>
-      <p>&copy; 2026 Carlos. Creado de forma autónoma con amor y código nativo.</p>
+      <p>&copy; 2026 Carlos. Hecho de forma artesanal.</p>
+      <p>Lienzo Limpio / Minimalismo Cálido</p>
     </footer>
 
   </div>
 
+  <!-- LÓGICA DE INTERCAMBIO DE PESTAÑAS (TABS) -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const tabLinks = document.querySelectorAll(".tab-link");
+      const tabSections = document.querySelectorAll(".tab-content-section");
+
+      tabLinks.forEach(link => {
+        link.addEventListener("click", () => {
+          const targetId = link.getAttribute("data-target");
+
+          // Desactivar todas las pestañas y secciones
+          tabLinks.forEach(t => t.classList.remove("active"));
+          tabSections.forEach(s => s.classList.remove("active"));
+
+          // Activar la seleccionada
+          link.classList.add("active");
+          const targetSection = document.getElementById(targetId);
+          if (targetSection) {
+            targetSection.classList.add("active");
+          }
+        });
+      });
+    });
+  </script>
 </body>
 </html>
