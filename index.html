@@ -1,545 +1,603 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   
   <!-- Primary Meta Tags -->
   <title>Carlos Torregrosa | Data Scientist &amp; Computational Engineer</title>
   <meta name="title" content="Carlos Torregrosa | Data Scientist &amp; Computational Engineer">
-  <meta name="description" content="Portfolio of Carlos Torregrosa. Data Science &amp; Computational Engineering graduate from Universitat Politècnica de València (UPV). Specialized in mathematical modeling, machine learning, optimization, and scientific computing.">
+  <meta name="description" content="Portfolio of Carlos Torregrosa. Data Science &amp; Computational Engineering graduate from UPV. Specialized in mathematical modeling, machine learning, optimization, and scientific software.">
   <meta name="author" content="Carlos Torregrosa">
-  
-  <!-- Open Graph / Social Sharing -->
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://carlostag.github.io/">
-  <meta property="og:title" content="Carlos Torregrosa | Data Scientist &amp; Computational Engineer">
-  <meta property="og:description" content="Turning complex data and mathematical models into actionable, efficient solutions.">
-  
-  <!-- Google Fonts: Rubik (Template signature) + JetBrains Mono for technical precision -->
+
+  <!-- Google Fonts: Rubik -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Rubik:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   
-  <!-- Pure CSS Stylesheet -->
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+  <!-- Custom Stylesheet -->
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-  <!-- ==========================================================================
-       NAVIGATION BAR
-       ========================================================================== -->
-  <header class="navbar">
-    <div class="nav-container">
-      <a href="#home" class="nav-brand">
-        <span class="brand-badge">CT</span>
-        <span>Carlos Torregrosa</span>
-      </a>
+  <!-- HERO SECTION CANVAS & BANNER -->
+  <div id="canvas-image-blending"></div>
 
-      <ul class="nav-links">
-        <li><a href="#about" class="nav-link">About</a></li>
-        <li><a href="#education" class="nav-link">Education</a></li>
-        <li><a href="#skills" class="nav-link">Expertise</a></li>
-        <li><a href="#projects" class="nav-link">Projects</a></li>
-        <li><a href="#contact" class="nav-link">Contact</a></li>
-      </ul>
-
-      <a href="https://github.com/carlostag" target="_blank" rel="noopener noreferrer" class="nav-github-btn">
-        GitHub @carlostag ↗
-      </a>
+  <div class="hero-section">
+    <div class="hero-pill">
+      <span>● UPV M.Sc. Computational Engineering &amp; Industrial Math</span>
     </div>
-  </header>
+    <h1>Hi, my name is Carlos Torregrosa</h1>
+    <p class="hero-sub">Data Scientist &amp; Computational Engineer</p>
+    <p class="hero-desc">
+      Turning complex data and mathematical models into actionable, efficient, and scalable solutions.
+    </p>
+    <div class="hero-btn-group">
+      <a href="#projects" class="hero-btn-primary">View Projects ↓</a>
+      <a href="#about" class="hero-btn-secondary">About Me</a>
+      <a href="#contact" class="hero-btn-secondary">Get in Touch ✉️</a>
+    </div>
+  </div>
 
-  <!-- ==========================================================================
-       HERO BANNER
-       ========================================================================== -->
-  <section class="hero-banner" id="home">
-    <div class="hero-wrapper">
-      <div class="hero-pill">
-        <span class="pill-dot"></span>
-        <span>UPV M.Sc. Computational Engineering &amp; Industrial Math</span>
+  <!-- MAIN CONTENT WRAPPER -->
+  <div class="main-content">
+
+    <!-- ======================================================================
+         SECTION 1: INTRODUCTION
+         ====================================================================== -->
+    <h2 id="about">Introduction</h2>
+
+    <div class="flex-container-reverse">
+      <div class="big-container-left">
+        <p class="time-text">ACADEMIC TRACK: B.Sc. DATA SCIENCE &amp; M.Sc. COMPUTATIONAL ENGINEERING (UPV)</p>
+        <p>
+          Hi, my name is <strong>Carlos Torregrosa</strong>. I am a Data Scientist and Computational Engineer combining rigorous mathematical modeling with modern machine learning, operations research, and scientific software development.
+        </p>
+        <p>
+          I hold a <strong>B.Sc. in Data Science</strong> and am pursuing an <strong>M.Sc. in Computational Engineering and Industrial Mathematics</strong> at <em>Universitat Politècnica de València (UPV)</em>.
+        </p>
+        <p>
+          My focus is on solving complex real-world problems through advanced data analytics, mathematical modeling, and computational engineering to deliver efficient, scalable, and high-impact solutions across industries and research.
+        </p>
+        <div class="tags-container">
+          <span class="tag-badge">Data Science &amp; ML</span>
+          <span class="tag-badge">Computational Math</span>
+          <span class="tag-badge">Mixed-Integer Optimization</span>
+          <span class="tag-badge">High Performance</span>
+        </div>
+      </div>
+      <div class="small-container-right">
+        <div class="image-card-fallback">
+          <span>👨‍💻</span>
+          <span>UPV • Valencia, Spain</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ======================================================================
+         SECTION 2: CURRENT PROJECTS
+         ====================================================================== -->
+    <h2 id="projects">My Current Projects</h2>
+
+    <!-- Current Project #1: Valencia Speedrunner -->
+    <div class="flex-container-reverse">
+      <div class="big-container-left">
+        <h3>Valencia Speedrunner</h3>
+        <p class="time-text">2025 – Present • Interactive Map &amp; Routing</p>
+        <p>
+          High-performance urban navigation and transit speedrunner web app for Valencia's public mobility network. Built with client-side pathfinding heuristics and vector tile rendering to calculate low-latency, optimal multi-modal travel routes.
+        </p>
+        <div class="tags-container">
+          <span class="tag-badge">TypeScript</span>
+          <span class="tag-badge">Vite</span>
+          <span class="tag-badge">Leaflet / Mapbox</span>
+          <span class="tag-badge">Route Optimization</span>
+          <span class="tag-badge">Geospatial</span>
+        </div>
+        <div class="d-flex gap-2">
+          <button type="button" class="btn-project btn-outline-success" data-bs-toggle="modal" data-bs-target="#modal1">
+            See Architecture &amp; Specs
+          </button>
+          <a href="https://github.com/carlostag/valencia-speedrunner" target="_blank" rel="noopener noreferrer" class="btn-project btn-outline-secondary">
+            View Code ↗
+          </a>
+        </div>
+      </div>
+      <div class="small-container-right">
+        <div class="image-card-fallback" style="background: linear-gradient(135deg, #0284c7 0%, #0369a1 100%);">
+          <span>🗺️</span>
+          <span>Routing &amp; Transit Engine</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Current Project #2: Water Forecast -->
+    <div class="flex-container-reverse">
+      <div class="big-container-left">
+        <h3>Water Demand &amp; Hydrological Forecasting</h3>
+        <p class="time-text">2025 • Time Series &amp; Deep Learning</p>
+        <p>
+          Predictive machine learning pipelines and neural sequence architectures for hydrological time series, urban water consumption, and anomaly detection. Combines deep recurrent networks (LSTM/GRU) with exogenous weather covariates.
+        </p>
+        <div class="tags-container">
+          <span class="tag-badge">Python</span>
+          <span class="tag-badge">PyTorch</span>
+          <span class="tag-badge">Time Series (LSTM)</span>
+          <span class="tag-badge">Pandas</span>
+          <span class="tag-badge">Scikit-Learn</span>
+        </div>
+        <div class="d-flex gap-2">
+          <button type="button" class="btn-project btn-outline-success" data-bs-toggle="modal" data-bs-target="#modal2">
+            See Architecture &amp; Specs
+          </button>
+          <a href="https://github.com/carlostag/water_forecast" target="_blank" rel="noopener noreferrer" class="btn-project btn-outline-secondary">
+            View Code ↗
+          </a>
+        </div>
+      </div>
+      <div class="small-container-right">
+        <div class="image-card-fallback" style="background: linear-gradient(135deg, #0891b2 0%, #0e7490 100%);">
+          <span>💧</span>
+          <span>Hydrological Predictive Models</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Current Project #3: Supply Chain Optimizer -->
+    <div class="flex-container-reverse">
+      <div class="big-container-left">
+        <h3>Supply Chain &amp; Operations Optimizer</h3>
+        <p class="time-text">2024 – Present • Mixed-Integer Linear Programming (MILP)</p>
+        <p>
+          Mathematical modeling and simulation platform solving warehouse allocation, vehicle routing, and multi-echelon inventory flow under stochastic demand constraints and discrete capacity limits.
+        </p>
+        <div class="tags-container">
+          <span class="tag-badge">Python</span>
+          <span class="tag-badge">MILP / SciPy</span>
+          <span class="tag-badge">Operations Research</span>
+          <span class="tag-badge">Mathematical Modeling</span>
+        </div>
+        <div class="d-flex gap-2">
+          <button type="button" class="btn-project btn-outline-success" data-bs-toggle="modal" data-bs-target="#modal3">
+            See Architecture &amp; Specs
+          </button>
+          <a href="https://github.com/carlostag/supply-chain-optimizer" target="_blank" rel="noopener noreferrer" class="btn-project btn-outline-secondary">
+            View Code ↗
+          </a>
+        </div>
+      </div>
+      <div class="small-container-right">
+        <div class="image-card-fallback" style="background: linear-gradient(135deg, #059669 0%, #047857 100%);">
+          <span>📦</span>
+          <span>Operations Research &amp; MILP</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ======================================================================
+         SECTION 3: COMPLETED PROJECTS & OPEN SOURCE
+         ====================================================================== -->
+    <h2>My Completed Projects (recent to old)</h2>
+
+    <!-- Completed Project #1: Algorithmic Jazz -->
+    <div class="flex-container">
+      <div class="small-container-left">
+        <div class="image-card-fallback" style="background: linear-gradient(135deg, #7c3aed 0%, #6d28d9 100%);">
+          <span>🎷</span>
+          <span>Generative Music &amp; Audio AI</span>
+        </div>
+      </div>
+      <div class="big-container-right">
+        <h3>Algorithmic Jazz Generator &amp; Spotify Analytics</h3>
+        <p class="time-text">2024 • Audio AI &amp; Algorithmic Music</p>
+        <p>
+          Stochastic harmonic progression generator and acoustic feature analysis engine using music theory heuristics, Markov transition chains, and Spotify API acoustic feature clustering.
+        </p>
+        <div class="tags-container">
+          <span class="tag-badge">Python</span>
+          <span class="tag-badge">Web Audio API</span>
+          <span class="tag-badge">Markov Chains</span>
+          <span class="tag-badge">Spotify API</span>
+        </div>
+        <div class="d-flex gap-2">
+          <button type="button" class="btn-project btn-outline-success" data-bs-toggle="modal" data-bs-target="#modal4">
+            See Architecture &amp; Specs
+          </button>
+          <a href="https://github.com/carlostag/jazz" target="_blank" rel="noopener noreferrer" class="btn-project btn-outline-secondary">
+            View Code ↗
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Completed Project #2: Pitchdle -->
+    <div class="flex-container">
+      <div class="small-container-left">
+        <div class="image-card-fallback" style="background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);">
+          <span>🎹</span>
+          <span>Web Audio Game Engine</span>
+        </div>
+      </div>
+      <div class="big-container-right">
+        <h3>Pitchdle — Absolute Pitch Ear Trainer</h3>
+        <p class="time-text">2024 • Web Audio Game</p>
+        <p>
+          Daily ear-training web game for absolute and relative pitch recognition. Synthesizes sinusoidal acoustic signals with harmonic overtone envelopes in browser using the native Web Audio API.
+        </p>
+        <div class="tags-container">
+          <span class="tag-badge">HTML5</span>
+          <span class="tag-badge">CSS3</span>
+          <span class="tag-badge">JavaScript</span>
+          <span class="tag-badge">Web Audio API</span>
+        </div>
+        <div class="d-flex gap-2">
+          <button type="button" class="btn-project btn-outline-success" data-bs-toggle="modal" data-bs-target="#modal5">
+            See Architecture &amp; Specs
+          </button>
+          <a href="https://github.com/carlostag/pitchdle" target="_blank" rel="noopener noreferrer" class="btn-project btn-outline-secondary">
+            View Code ↗
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Completed Project #3: Murdoku Logic Engine -->
+    <div class="flex-container">
+      <div class="small-container-left">
+        <div class="image-card-fallback" style="background: linear-gradient(135deg, #d97706 0%, #b45309 100%);">
+          <span>🧩</span>
+          <span>Combinatorics &amp; Exact Cover</span>
+        </div>
+      </div>
+      <div class="big-container-right">
+        <h3>Murdoku &amp; Constraint Logic Solver Engine</h3>
+        <p class="time-text">2024 • Combinatorics &amp; Heuristics</p>
+        <p>
+          Combinatorial constraint satisfaction puzzle engine with deductive logical solvers, matrix reductions (Dancing Links / Exact Cover), and customized grid puzzle generation heuristics.
+        </p>
+        <div class="tags-container">
+          <span class="tag-badge">Algorithms</span>
+          <span class="tag-badge">Constraint Satisfaction</span>
+          <span class="tag-badge">Combinatorics</span>
+          <span class="tag-badge">Python</span>
+        </div>
+        <div class="d-flex gap-2">
+          <a href="https://github.com/carlostag/Murdoku" target="_blank" rel="noopener noreferrer" class="btn-project btn-outline-success">
+            View on GitHub ↗
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- ======================================================================
+         SECTION 4: CORE EXPERTISE & SKILLS
+         ====================================================================== -->
+    <h2>Core Expertise &amp; Technical Pillars</h2>
+
+    <div class="row g-4 py-2">
+      <!-- Card 1 -->
+      <div class="col-sm-6 col-lg-3">
+        <div class="card">
+          <div class="image-card-fallback" style="height: 140px; font-size: 2.2rem; background: linear-gradient(135deg, #0f172a, #1e293b);">
+            <span>🧠</span>
+          </div>
+          <div class="card-body">
+            <p class="card-text">Data Science &amp; ML</p>
+            <p style="font-size: 0.88rem; color: #64748b;">
+              Predictive modeling, deep learning (PyTorch), time series forecasting, Scikit-learn &amp; Pandas.
+            </p>
+          </div>
+        </div>
       </div>
 
-      <h1 class="hero-title">Carlos Torregrosa</h1>
-      <h2 class="hero-subtitle">Data Scientist &amp; Computational Engineer</h2>
+      <!-- Card 2 -->
+      <div class="col-sm-6 col-lg-3">
+        <div class="card">
+          <div class="image-card-fallback" style="height: 140px; font-size: 2.2rem; background: linear-gradient(135deg, #0f172a, #1e293b);">
+            <span>📐</span>
+          </div>
+          <div class="card-body">
+            <p class="card-text">Applied Math &amp; MILP</p>
+            <p style="font-size: 0.88rem; color: #64748b;">
+              Mixed-integer programming, numerical ODE/PDE solvers, operations research &amp; SciPy.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="col-sm-6 col-lg-3">
+        <div class="card">
+          <div class="image-card-fallback" style="height: 140px; font-size: 2.2rem; background: linear-gradient(135deg, #0f172a, #1e293b);">
+            <span>⚡</span>
+          </div>
+          <div class="card-body">
+            <p class="card-text">Scientific Software</p>
+            <p style="font-size: 0.88rem; color: #64748b;">
+              High computational efficiency, Python scientific stack, TypeScript, Web Audio API &amp; CI/CD.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="col-sm-6 col-lg-3">
+        <div class="card">
+          <div class="image-card-fallback" style="height: 140px; font-size: 2.2rem; background: linear-gradient(135deg, #0f172a, #1e293b);">
+            <span>🎓</span>
+          </div>
+          <div class="card-body">
+            <p class="card-text">Academic Foundation</p>
+            <p style="font-size: 0.88rem; color: #64748b;">
+              B.Sc. Data Science &amp; M.Sc. Computational Engineering at UPV with high honors.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ======================================================================
+         SECTION 5: LANGUAGES
+         ====================================================================== -->
+    <h2>Languages</h2>
+    
+    <div class="progress-group">
+      <div class="progress-header">
+        <span>Spanish (Native)</span>
+        <span>100%</span>
+      </div>
+      <div class="progressbar">
+        <div class="inner-progressbar spanish">100%</div>
+      </div>
+
+      <div class="progress-header">
+        <span>Valencian / Catalan (Native / Bilingual)</span>
+        <span>100%</span>
+      </div>
+      <div class="progressbar">
+        <div class="inner-progressbar valencian">100%</div>
+      </div>
+
+      <div class="progress-header">
+        <span>English (Professional &amp; Academic Proficiency)</span>
+        <span>90%</span>
+      </div>
+      <div class="progressbar">
+        <div class="inner-progressbar english">90%</div>
+      </div>
+
+      <div class="progress-header">
+        <span>Italian (Elementary / Working knowledge)</span>
+        <span>50%</span>
+      </div>
+      <div class="progressbar">
+        <div class="inner-progressbar italian">50%</div>
+      </div>
+    </div>
+
+    <!-- ======================================================================
+         SECTION 6: CONTACT ME
+         ====================================================================== -->
+    <div class="contact-section" id="contact">
+      <h2>Contact Me</h2>
       
-      <p class="hero-desc">
-        Turning complex data and mathematical models into actionable, efficient, and high-impact solutions.
+      <p style="max-width: 600px; margin: 15px auto;">
+        I would love to connect and discuss research initiatives, computational modeling, data science projects, or engineering collaborations.
       </p>
 
-      <div class="hero-ctas">
-        <a href="#projects" class="btn btn-primary">View Projects ↓</a>
-        <a href="#education" class="btn btn-secondary">Academic CV</a>
-        <a href="#contact" class="btn btn-secondary">Get in Touch ✉️</a>
+      <div class="social-icons-row">
+        <a href="mailto:carlostorregrosag@gmail.com" class="social-icon-circle icon-email" title="Send Email">
+          <i class="fa fa-paper-plane"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/carlostorregrosa" target="_blank" rel="noopener noreferrer" class="social-icon-circle icon-linkedin" title="LinkedIn Profile">
+          <i class="fa fa-linkedin"></i>
+        </a>
+        <a href="https://github.com/carlostag" target="_blank" rel="noopener noreferrer" class="social-icon-circle icon-github" title="GitHub Profile">
+          <i class="fa fa-github"></i>
+        </a>
       </div>
+
+      <p style="font-family: 'JetBrains Mono', monospace; font-size: 0.9rem; color: #64748b;">
+        📍 Valencia, Spain • Universitat Politècnica de València (UPV)
+      </p>
     </div>
-  </section>
+
+  </div> <!-- End .main-content -->
 
   <!-- ==========================================================================
-       MAIN CONTENT CONTAINER
+       MODALS (PROJECT SPECS & ARCHITECTURAL BREAKDOWN)
        ========================================================================== -->
-  <main class="main-content">
 
-    <!-- ========================================================================
-         SECTION 1: INTRODUCTION & ABOUT ME
-         ======================================================================== -->
-    <section id="about">
-      <div class="section-title-wrap">
-        <span class="section-label">// Background &amp; Philosophy</span>
-        <h2 class="section-title">Introduction</h2>
-        <p class="section-subtitle">
-          Bridging mathematical rigor, predictive machine learning, and high computational efficiency.
-        </p>
-      </div>
-
-      <!-- RosaCodes Signature Two-Column Flex Card -->
-      <div class="flex-container">
-        <div class="big-container-left">
-          <div>
-            <p class="time-text">UPV DATA SCIENCE &amp; APPLIED MATHEMATICS</p>
-            <p class="card-desc">
-              I am a <strong>Data Scientist and Computational Engineer</strong> combining rigorous mathematical modeling with modern machine learning and scientific computing.
-            </p>
-            <p class="card-desc">
-              My background focuses on high computational efficiency, deep analytical problem-solving, and cross-industry applications. I specialize in translating complex theoretical frameworks — ranging from mixed-integer optimization and numerical PDE simulation to neural time series forecasting — into robust, production-ready software tools.
-            </p>
-          </div>
-          <div class="card-actions">
-            <a href="#projects" class="card-link">Explore featured projects ➔</a>
-          </div>
+  <!-- Modal 1: Valencia Speedrunner -->
+  <div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="modal1Label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title font-weight-bold" id="modal1Label">Valencia Speedrunner — Architecture</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
-
-        <div class="small-container-right">
-          <div class="side-card-panel">
-            <h4 style="font-size: 1rem; color: var(--accent-cyan); font-family: var(--font-mono);">Value Proposition:</h4>
-            <ul class="bullet-list">
-              <li><strong>High Computational Efficiency:</strong> Vectorized numerical algorithms &amp; low-latency execution.</li>
-              <li><strong>Mathematical Rigor:</strong> Deep formulation in linear algebra, calculus, and stochastic modeling.</li>
-              <li><strong>Machine Learning:</strong> Deep learning, predictive sequence models, and pattern recognition.</li>
-              <li><strong>Impact-Driven:</strong> Practical, reliable tools built for industry and research.</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ========================================================================
-         SECTION 2: ACADEMIC EDUCATION & CV TRACK
-         ======================================================================== -->
-    <section id="education">
-      <div class="section-title-wrap">
-        <span class="section-label">// Academic Foundation</span>
-        <h2 class="section-title">Education &amp; Background</h2>
-      </div>
-
-      <div class="education-grid">
-        <!-- Degree 1 -->
-        <div class="education-box">
-          <div>
-            <span class="time-text">2024 – PRESENT</span>
-            <h3 class="edu-degree">M.Sc. in Computational Engineering &amp; Industrial Mathematics</h3>
-            <p class="edu-school">Universitat Politècnica de València (UPV)</p>
-            <p class="card-desc" style="margin-top: 10px;">
-              Specialized in numerical simulation, finite element methods, optimization algorithms, high-performance scientific computing, and mathematical modeling of industrial systems.
-            </p>
-          </div>
-          <div class="tag-list">
-            <span class="tag-item">Numerical Solvers</span>
-            <span class="tag-item">Optimization</span>
-            <span class="tag-item">Finite Elements</span>
-            <span class="tag-item">Scientific Computing</span>
-          </div>
-        </div>
-
-        <!-- Degree 2 -->
-        <div class="education-box">
-          <div>
-            <span class="time-text">2020 – 2024</span>
-            <h3 class="edu-degree">B.Sc. in Data Science</h3>
-            <p class="edu-school">Universitat Politècnica de València (UPV)</p>
-            <p class="card-desc" style="margin-top: 10px;">
-              Rigorous curriculum covering statistical learning, machine learning pipelines, big data architectures, multivariate analysis, algorithm design, and software engineering.
-            </p>
-          </div>
-          <div class="tag-list">
-            <span class="tag-item">Statistical Learning</span>
-            <span class="tag-item">Machine Learning</span>
-            <span class="tag-item">Big Data</span>
-            <span class="tag-item">Algorithms</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ========================================================================
-         SECTION 3: CORE EXPERTISE / SKILLS
-         ======================================================================== -->
-    <section id="skills">
-      <div class="section-title-wrap">
-        <span class="section-label">// Technical Stack</span>
-        <h2 class="section-title">Core Expertise</h2>
-        <p class="section-subtitle">
-          Analytical and software engineering toolsets applied in research and production.
-        </p>
-      </div>
-
-      <div class="skills-container-grid">
-        <div class="skill-category-card">
-          <h4 class="skill-cat-title">🧠 Data Science &amp; ML</h4>
-          <ul class="bullet-list">
-            <li>Predictive Modeling &amp; Inference</li>
-            <li>PyTorch &amp; Deep Learning</li>
-            <li>Time Series Forecasting (LSTM/GRU)</li>
-            <li>Feature Engineering &amp; Pipelines</li>
-            <li>Scikit-Learn, Pandas &amp; Polars</li>
-          </ul>
-        </div>
-
-        <div class="skill-category-card">
-          <h4 class="skill-cat-title">📐 Math &amp; Optimization</h4>
-          <ul class="bullet-list">
-            <li>Mixed-Integer Linear Prog. (MILP)</li>
-            <li>Numerical Solvers (ODEs/PDEs)</li>
-            <li>Convex Optimization &amp; Heuristics</li>
-            <li>Operations Research &amp; Graphs</li>
-            <li>NumPy &amp; SciPy</li>
-          </ul>
-        </div>
-
-        <div class="skill-category-card">
-          <h4 class="skill-cat-title">⚡ Scientific &amp; Web Software</h4>
-          <ul class="bullet-list">
-            <li>Python Scientific Stack</li>
-            <li>TypeScript &amp; JavaScript</li>
-            <li>Modern Web (HTML5/CSS3)</li>
-            <li>Web Audio API &amp; Synthesizers</li>
-            <li>Git, CI/CD &amp; REST APIs</li>
-          </ul>
-        </div>
-
-        <div class="skill-category-card">
-          <h4 class="skill-cat-title">🎯 Competencies</h4>
-          <ul class="bullet-list">
-            <li>High Computational Efficiency</li>
-            <li>Algorithm Design &amp; Complexity</li>
-            <li>Mathematical Problem Modeling</li>
-            <li>Scientific Communication</li>
-            <li>Cross-Industry Adaptability</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <!-- ========================================================================
-         SECTION 4: FEATURED GITHUB PROJECTS (ROSA CODES FLEX ROWS)
-         ======================================================================== -->
-    <section id="projects">
-      <div class="section-title-wrap">
-        <span class="section-label">// GitHub Showcase</span>
-        <h2 class="section-title">Featured Projects &amp; Applications</h2>
-        <p class="section-subtitle">
-          Selected open-source repositories, optimization engines, and interactive web tools.
-        </p>
-      </div>
-
-      <div class="projects-stack">
-
-        <!-- PROJECT 1: VALENCIA SPEEDRUNNER -->
-        <article class="flex-container">
-          <div class="big-container-left">
-            <div>
-              <span class="time-text">2025 • INTERACTIVE WEB &amp; TRANSIT</span>
-              <h3 class="card-headline">Valencia Speedrunner</h3>
-              <p class="card-desc">
-                High-performance urban navigation and transit speedrunner web application for Valencia's public mobility map. Engineered with client-side route pathfinding heuristics and vector map rendering for rapid, low-latency spatial route optimization.
-              </p>
-              <div class="tag-list">
-                <span class="tag-item">TypeScript</span>
-                <span class="tag-item">Vite</span>
-                <span class="tag-item">Leaflet / Mapbox</span>
-                <span class="tag-item">Route Optimization</span>
-                <span class="tag-item">Geospatial Data</span>
-              </div>
-            </div>
-            <div class="card-actions">
-              <a href="https://github.com/carlostag/valencia-speedrunner" target="_blank" rel="noopener noreferrer" class="card-link">
-                View GitHub Repository ➔
-              </a>
-            </div>
-          </div>
-
-          <div class="small-container-right">
-            <div class="side-card-panel">
-              <h4 style="font-size: 0.95rem; color: var(--accent-cyan); font-family: var(--font-mono);">Key Architecture:</h4>
-              <ul class="bullet-list">
-                <li>Spatial graph traversal for instant route computation</li>
-                <li>Responsive vector tile rendering at high frame rates</li>
-                <li>Component-driven state engine with telemetry metrics</li>
-              </ul>
-            </div>
-          </div>
-        </article>
-
-        <!-- PROJECT 2: WATER FORECAST -->
-        <article class="flex-container">
-          <div class="big-container-left">
-            <div>
-              <span class="time-text">2025 • DATA SCIENCE &amp; HYDROLOGY</span>
-              <h3 class="card-headline">Water Demand &amp; Hydrological Forecasting</h3>
-              <p class="card-desc">
-                Predictive machine learning models and neural forecasting architectures for hydrological time series, urban water consumption, and anomaly detection. Implements multi-horizon sequence models coupled with exogenous weather covariates.
-              </p>
-              <div class="tag-list">
-                <span class="tag-item">Python</span>
-                <span class="tag-item">PyTorch</span>
-                <span class="tag-item">Time Series (LSTM)</span>
-                <span class="tag-item">Pandas</span>
-                <span class="tag-item">Feature Engineering</span>
-              </div>
-            </div>
-            <div class="card-actions">
-              <a href="https://github.com/carlostag/water_forecast" target="_blank" rel="noopener noreferrer" class="card-link">
-                View GitHub Repository ➔
-              </a>
-            </div>
-          </div>
-
-          <div class="small-container-right">
-            <div class="side-card-panel">
-              <h4 style="font-size: 0.95rem; color: var(--accent-cyan); font-family: var(--font-mono);">Key Architecture:</h4>
-              <ul class="bullet-list">
-                <li>Multi-step ahead horizon forecasting with confidence bounds</li>
-                <li>Fourier decomposition and seasonality transformations</li>
-                <li>Robust metric validation (RMSE, MAPE, WAPE)</li>
-              </ul>
-            </div>
-          </div>
-        </article>
-
-        <!-- PROJECT 3: SUPPLY CHAIN & LOGISTICS OPTIMIZER -->
-        <article class="flex-container">
-          <div class="big-container-left">
-            <div>
-              <span class="time-text">2024 • APPLIED MATH &amp; OPERATIONS RESEARCH</span>
-              <h3 class="card-headline">Supply Chain &amp; Operations Optimizer</h3>
-              <p class="card-desc">
-                Logistics and routing simulation platform utilizing mixed-integer linear programming (MILP) to solve warehouse allocation, vehicle routing, and multi-echelon inventory flow under stochastic demand constraints.
-              </p>
-              <div class="tag-list">
-                <span class="tag-item">Python</span>
-                <span class="tag-item">MILP / SciPy</span>
-                <span class="tag-item">Mathematical Modeling</span>
-                <span class="tag-item">Operations Research</span>
-              </div>
-            </div>
-            <div class="card-actions">
-              <a href="https://github.com/carlostag/supply-chain-optimizer" target="_blank" rel="noopener noreferrer" class="card-link">
-                View GitHub Repository ➔
-              </a>
-            </div>
-          </div>
-
-          <div class="small-container-right">
-            <div class="side-card-panel">
-              <h4 style="font-size: 0.95rem; color: var(--accent-cyan); font-family: var(--font-mono);">Key Architecture:</h4>
-              <ul class="bullet-list">
-                <li>MILP objective formulations for capacity routing</li>
-                <li>Stochastic sensitivity analysis against demand shocks</li>
-                <li>Automated scenario evaluation and data reporting</li>
-              </ul>
-            </div>
-          </div>
-        </article>
-
-        <!-- PROJECT 4: ALGORITHMIC JAZZ & AUDIO ANALYTICS -->
-        <article class="flex-container">
-          <div class="big-container-left">
-            <div>
-              <span class="time-text">2024 • AUDIO AI &amp; ALGORITHMIC MUSIC</span>
-              <h3 class="card-headline">Algorithmic Jazz &amp; Audio Analytics</h3>
-              <p class="card-desc">
-                Stochastic harmonic progression generator and acoustic feature analysis engine using music theory heuristics, Markov transition chains, and Spotify API acoustic metadata clustering.
-              </p>
-              <div class="tag-list">
-                <span class="tag-item">Python</span>
-                <span class="tag-item">Web Audio API</span>
-                <span class="tag-item">Markov Chains</span>
-                <span class="tag-item">Spotify API</span>
-                <span class="tag-item">Acoustic Signal</span>
-              </div>
-            </div>
-            <div class="card-actions">
-              <a href="https://github.com/carlostag/jazz" target="_blank" rel="noopener noreferrer" class="card-link">
-                View GitHub Repository ➔
-              </a>
-            </div>
-          </div>
-
-          <div class="small-container-right">
-            <div class="side-card-panel">
-              <h4 style="font-size: 0.95rem; color: var(--accent-cyan); font-family: var(--font-mono);">Key Architecture:</h4>
-              <ul class="bullet-list">
-                <li>Markov transition matrices for modal jazz chord substitutions</li>
-                <li>Automated MIDI composition generation engine</li>
-                <li>Spotify API valence and acoustic timbre clustering</li>
-              </ul>
-            </div>
-          </div>
-        </article>
-
-        <!-- PROJECT 5: PITCHDLE -->
-        <article class="flex-container">
-          <div class="big-container-left">
-            <div>
-              <span class="time-text">2024 • WEB AUDIO GAME</span>
-              <h3 class="card-headline">Pitchdle — Absolute Pitch Trainer</h3>
-              <p class="card-desc">
-                Daily ear-training web game for absolute and relative pitch recognition. Generates pure sinusoidal tones with harmonic overtone synthesis via the native Web Audio API with ADSR envelope shaping.
-              </p>
-              <div class="tag-list">
-                <span class="tag-item">HTML5</span>
-                <span class="tag-item">CSS3</span>
-                <span class="tag-item">Web Audio API</span>
-                <span class="tag-item">Audio Synthesis</span>
-              </div>
-            </div>
-            <div class="card-actions">
-              <a href="https://github.com/carlostag/pitchdle" target="_blank" rel="noopener noreferrer" class="card-link">
-                View GitHub Repository ➔
-              </a>
-            </div>
-          </div>
-
-          <div class="small-container-right">
-            <div class="side-card-panel">
-              <h4 style="font-size: 0.95rem; color: var(--accent-cyan); font-family: var(--font-mono);">Key Architecture:</h4>
-              <ul class="bullet-list">
-                <li>Oscillator and harmonic overtone synthesizer in browser</li>
-                <li>Daily randomized seed generator with guess analytics</li>
-                <li>Responsive, lightweight zero-dependency architecture</li>
-              </ul>
-            </div>
-          </div>
-        </article>
-
-        <!-- PROJECT 6: MURDOKU LOGIC ENGINE -->
-        <article class="flex-container">
-          <div class="big-container-left">
-            <div>
-              <span class="time-text">2024 • COMBINATORICS &amp; HEURISTICS</span>
-              <h3 class="card-headline">Murdoku &amp; Constraint Solver Engine</h3>
-              <p class="card-desc">
-                Combinatorial constraint satisfaction puzzle engine with deductive logical solvers, matrix reductions (Dancing Links / Exact Cover), and customized grid puzzle generation heuristics.
-              </p>
-              <div class="tag-list">
-                <span class="tag-item">Python</span>
-                <span class="tag-item">Algorithms</span>
-                <span class="tag-item">Constraint Satisfaction</span>
-                <span class="tag-item">Combinatorics</span>
-              </div>
-            </div>
-            <div class="card-actions">
-              <a href="https://github.com/carlostag/Murdoku" target="_blank" rel="noopener noreferrer" class="card-link">
-                View GitHub Repository ➔
-              </a>
-            </div>
-          </div>
-
-          <div class="small-container-right">
-            <div class="side-card-panel">
-              <h4 style="font-size: 0.95rem; color: var(--accent-cyan); font-family: var(--font-mono);">Key Architecture:</h4>
-              <ul class="bullet-list">
-                <li>Backtracking solver with forward checking &amp; MRV heuristic</li>
-                <li>Benchmark puzzle generator with difficulty metrics</li>
-                <li>Decoupled game state and deductive solver engine</li>
-              </ul>
-            </div>
-          </div>
-        </article>
-
-      </div>
-    </section>
-
-    <!-- ========================================================================
-         SECTION 5: CONTACT & SOCIAL LINKS
-         ======================================================================== -->
-    <section id="contact" class="contact-section-wrapper">
-      <div class="section-title-wrap">
-        <span class="section-label">// Connect &amp; Inquire</span>
-        <h2 class="section-title">Get in Touch</h2>
-        <p class="section-subtitle">
-          Open to research collaborations, industrial engineering challenges, and data science opportunities.
-        </p>
-      </div>
-
-      <div class="contact-layout">
-        <!-- Direct channels -->
-        <div class="contact-info-col">
-          <div>
-            <h3 style="font-size: 1.25rem; margin-bottom: 12px;">Direct Channels</h3>
-            <p class="card-desc">
-              Feel free to reach out directly via email, GitHub, or LinkedIn. I am based in Valencia, Spain at Universitat Politècnica de València (UPV).
-            </p>
-          </div>
-
-          <div class="contact-btn-list">
-            <a href="mailto:carlostorregrosag@gmail.com" class="contact-btn-item">
-              <span>✉️ carlostorregrosag@gmail.com</span>
-              <span class="card-link">Email ➔</span>
-            </a>
-            <a href="https://github.com/carlostag" target="_blank" rel="noopener noreferrer" class="contact-btn-item">
-              <span>💻 github.com/carlostag</span>
-              <span class="card-link">GitHub ➔</span>
-            </a>
-            <a href="https://www.linkedin.com/in/carlostorregrosa" target="_blank" rel="noopener noreferrer" class="contact-btn-item">
-              <span>🌐 linkedin.com/in/carlostorregrosa</span>
-              <span class="card-link">LinkedIn ➔</span>
-            </a>
-          </div>
-
-          <p style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--text-dim);">
-            📍 Valencia, Spain • Universitat Politècnica de València
+        <div class="modal-body">
+          <p>
+            Valencia Speedrunner is a web-based geospatial mobility game and route optimization tool designed for the metropolitan transit network of Valencia.
           </p>
+          <h6>Key Engineering Highlights:</h6>
+          <ul>
+            <li>Client-side spatial graph traversal for real-time optimal route generation</li>
+            <li>High-framerate vector map rendering via Mapbox / Leaflet</li>
+            <li>Custom transit heuristic scoring based on distance, wait times, and transfers</li>
+          </ul>
+          <h6>Technologies Used:</h6>
+          <ul>
+            <li>TypeScript &amp; Vite</li>
+            <li>HTML5 / CSS3</li>
+            <li>Geospatial GeoJSON Data &amp; Leaflet API</li>
+          </ul>
         </div>
-
-        <!-- Clean Form -->
-        <div>
-          <h3 style="font-size: 1.25rem; margin-bottom: 16px;">Send a Direct Message</h3>
-          <form class="contact-form" action="mailto:carlostorregrosag@gmail.com" method="POST" enctype="text/plain">
-            <div class="form-group">
-              <label for="name" class="form-label">NAME</label>
-              <input type="text" id="name" name="name" class="form-input" placeholder="Your name or organization" required>
-            </div>
-
-            <div class="form-group">
-              <label for="email" class="form-label">EMAIL</label>
-              <input type="email" id="email" name="email" class="form-input" placeholder="name@domain.com" required>
-            </div>
-
-            <div class="form-group">
-              <label for="message" class="form-label">MESSAGE</label>
-              <textarea id="message" name="message" class="form-textarea" placeholder="Tell me about your project, idea, or inquiry..." required></textarea>
-            </div>
-
-            <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center;">
-              Send Message ✉️
-            </button>
-          </form>
+        <div class="modal-footer">
+          <a href="https://github.com/carlostag/valencia-speedrunner" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+            View on GitHub ↗
+          </a>
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
         </div>
       </div>
-    </section>
+    </div>
+  </div>
 
-  </main>
+  <!-- Modal 2: Water Forecast -->
+  <div class="modal fade" id="modal2" tabindex="-1" aria-labelledby="modal2Label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title font-weight-bold" id="modal2Label">Water Demand &amp; Hydrological Forecasting</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>
+            An end-to-end data science and neural forecasting pipeline for multi-step hydrological time series prediction.
+          </p>
+          <h6>Key Engineering Highlights:</h6>
+          <ul>
+            <li>Multi-horizon predictive modeling with LSTM and GRU sequence architectures</li>
+            <li>Fourier decomposition and seasonal lag feature engineering</li>
+            <li>Benchmarked against classical statistical models (ARIMA, Exponential Smoothing)</li>
+          </ul>
+          <h6>Technologies Used:</h6>
+          <ul>
+            <li>Python, PyTorch &amp; Scikit-Learn</li>
+            <li>Pandas, NumPy &amp; Matplotlib</li>
+          </ul>
+        </div>
+        <div class="modal-footer">
+          <a href="https://github.com/carlostag/water_forecast" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+            View on GitHub ↗
+          </a>
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 3: Supply Chain Optimizer -->
+  <div class="modal fade" id="modal3" tabindex="-1" aria-labelledby="modal3Label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title font-weight-bold" id="modal3Label">Supply Chain &amp; Operations Optimizer</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>
+            Logistics optimization engine utilizing Mixed-Integer Linear Programming (MILP) to minimize total transportation and storage costs.
+          </p>
+          <h6>Key Engineering Highlights:</h6>
+          <ul>
+            <li>Formulation of constrained MILP models for multi-echelon network flow</li>
+            <li>Sensitivity analysis against demand fluctuations</li>
+            <li>Simulated dispatch routing under discrete warehouse capacity constraints</li>
+          </ul>
+          <h6>Technologies Used:</h6>
+          <ul>
+            <li>Python &amp; SciPy Optimize</li>
+            <li>PuLP / Mathematical Modeling</li>
+            <li>Data Visualization</li>
+          </ul>
+        </div>
+        <div class="modal-footer">
+          <a href="https://github.com/carlostag/supply-chain-optimizer" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+            View on GitHub ↗
+          </a>
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 4: Algorithmic Jazz -->
+  <div class="modal fade" id="modal4" tabindex="-1" aria-labelledby="modal4Label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title font-weight-bold" id="modal4Label">Algorithmic Jazz &amp; Spotify Analytics</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>
+            Stochastic progression synthesis combining probability matrices with music theory chord substitution rules and Spotify metadata clustering.
+          </p>
+          <h6>Key Engineering Highlights:</h6>
+          <ul>
+            <li>Markov chain transition matrices for modal jazz chord substitutions</li>
+            <li>Automated MIDI composition generation and multi-voice synthesis</li>
+            <li>Spotify API audio feature extraction and valence analysis</li>
+          </ul>
+          <h6>Technologies Used:</h6>
+          <ul>
+            <li>Python &amp; Web Audio API</li>
+            <li>Spotify API</li>
+            <li>MIDI generation libraries</li>
+          </ul>
+        </div>
+        <div class="modal-footer">
+          <a href="https://github.com/carlostag/jazz" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+            View on GitHub ↗
+          </a>
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 5: Pitchdle -->
+  <div class="modal fade" id="modal5" tabindex="-1" aria-labelledby="modal5Label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title font-weight-bold" id="modal5Label">Pitchdle — Absolute Pitch Trainer</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>
+            A lightweight daily ear-training browser game testing absolute pitch recognition in 5 attempts.
+          </p>
+          <h6>Key Engineering Highlights:</h6>
+          <ul>
+            <li>Pure oscillator synthesis using the native Web Audio API with ADSR gain envelope shaping</li>
+            <li>Lightweight, zero-framework vanilla web implementation</li>
+            <li>LocalStorage game state persistence &amp; guess feedback visualizer</li>
+          </ul>
+          <h6>Technologies Used:</h6>
+          <ul>
+            <li>HTML5, CSS3, JavaScript</li>
+            <li>Web Audio API</li>
+          </ul>
+        </div>
+        <div class="modal-footer">
+          <a href="https://github.com/carlostag/pitchdle" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+            View on GitHub ↗
+          </a>
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- ==========================================================================
        FOOTER
        ========================================================================== -->
-  <footer class="footer">
+  <footer>
     <p>&copy; 2026 Carlos Torregrosa. All rights reserved.</p>
-    <p style="font-family: var(--font-mono); font-size: 0.78rem;">
-      Data Scientist &amp; Computational Engineer • UPV • 100% Pure HTML5 &amp; CSS3
+    <p>
+      Data Scientist &amp; Computational Engineer • Universitat Politècnica de València (UPV)
     </p>
   </footer>
 
+  <!-- Bootstrap 5 JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
